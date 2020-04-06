@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+.container {
+    /* font-family: 'Permanent Marker', cursive; */
+    padding-top: 60px;
+    width: 100%;
+    font-weight: 1200;
+    /* background-image: url('bg.jpg'); */
+}
+.item{
+    height: 600px;
+    width: 100%;
+}
+.item span{
+    font-size: 300%;
+}
+.item text{
+    font-size: 125%;
+    margin-left: 30px;
+}
+.working{
+    background-image: url('プログラミング.jpg');
+    background-size: cover;
+    color: white;
+    /* background-repeat: no-repeat; */
+}
+.eatting{
+    background-image: url('タピオカ.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+.drawing{
+    background-image: url('まんが.jpg');
+    background-size: cover;
+    color: white;
+}
+

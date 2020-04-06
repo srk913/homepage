@@ -1,0 +1,24 @@
+html, body, .wrapper{
+    height: 99.8%;
+    width: 99.8%;
+    font-family: 'Kaushan Script', cursive;
+    background-image: url('bg.jpg');
+
+}
+/* ヘッダー部分　ホーム、About、Works、Contact */
+.header{
+    height: 60px;
+    /* width: 500px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    position: fixed;
+}
+a{
+    margin: 0 20px;
+    color: black;
+}

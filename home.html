@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="All_style.css">
+    <link rel="stylesheet" href="home_style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- font-family -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker rel=" stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="simpletextrotator.css" rel="stylesheet">
+    <script src="jquery.simple-text-rotator.js"></script>
+    <title>home</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="menus">
+                <a href="home.html"><i class="fas fa-pen-fancy"></i></a>
+                <a href="about.html">About</a>
+                <a href="works.html">Works</a>
+                <a href="contact.htm">Contact</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="img_box">
+                <img name="illust" src="イラスト1.jpg">
+                <div class="gradation"></div>
+                <!-- <div class="img"></div> -->
+            </div>
+            <div class="prf">
+                <h1 class="prf-item job">
+                    Illustrator,Neet,Comic Artist,Engineer
+                </h1>
+                <!-- <h1 id="job" class="prf-item rotateX_2">NEET</h1> -->
+                <h2 class="prf-item my_name">
+                    Shotaro Shimai
+                </h2>
+                <p class="prf-item no_font">漫画やイラストを描いてます。</p>
+                <p class="prf-item no_font"><a href="https://www.pixiv.net/">Pixiv</a>や<a href="https://twitter.com/SSrk913">Twitter</a>にも投稿してるのでフォローお願いします！</p>
+                <p class="prf-item no_font">質問やコメントは<a href="">Contact</a>フォームからどうぞ！</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="icon">
+                <a href="https://twitter.com/SSrk913"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href=""><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.pixiv.net/"><i class="fab fa-product-hunt fa-lg"></i></a>
+                <a href=""><i class="fab fa-github fa-lg fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // イラストの変更　５秒間隔
+        img = new Array("イラスト1.jpg", "イラスト2.jpg", "イラスト3.jpg", "イラスト4.jpg", "イラスト5.jpg", "イラスト6.jpg"); //*1
+        count = -1; //*2
+        imgTimer();
+        function imgTimer() {
+            //画像番号
+            count++; //*3
+            //画像の枚数確認
+            if (count == img.length) count = 0; //*4
+            //画像出力
+            document.illust.src = img[count]; //*5
+            //次のタイマー呼びだし
+            setTimeout("imgTimer()", 5000); //*6
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $(".job").textrotator({
+                animation: "flipCube",  //dissolve(default), fade, flip, flipUp, flipCube, flipCubeUp ,spin
+                separator: ",",  //文字を分割する文字
+                speed: 3000  //次の文字を表示させる時間ミリ秒
+            });
+        });
+    </script>
+    </script>
+
+</body>
+
+</html>
